@@ -27,7 +27,7 @@ int adjacent(vector<vector<int> > &V) {
         MAXSUM[i][0] = max(MAXSUM[i-1][0], MAXSUM[i-1][1]);
         MAXSUM[i][1] = cur_element + MAXSUM[i-1][0];
     }
-    return max(MAXSUM[N-1][0], MAXSUM[N-1][1]);
+    return max(MAXSUM[C-1][0], MAXSUM[C-1][1]);
 }
 int main(){
     vector<vector<int> > V;
