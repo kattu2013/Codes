@@ -18,7 +18,7 @@ using namespace std;
 int adjacent(vector<vector<int> > &V) {
     assert(V.size() == 2);
     int C = V[0].size();
-    int MAXSUM[C + 1][2];
+    int MAXSUM[C][2];
     memset(MAXSUM, 0, sizeof(MAXSUM));
     int ele = max(V[0][0], V[1][0]);
     MAXSUM[0][1] = ele;
